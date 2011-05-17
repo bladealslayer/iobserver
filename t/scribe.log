@@ -1,0 +1,6 @@
+scribe: ./test: WATCH STARTED
+scribe: test: file 'foo' was CREATED
+scribe: test: file 'foo' was OPENED
+scribe: test: The METADATA for file 'foo' was changed
+scribe: test: file 'foo' was CLOSED
+scribe: ./test: WATCH STOPPED

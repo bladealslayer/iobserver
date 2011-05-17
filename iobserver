@@ -1,0 +1,23 @@
+#!/usr/bin/python
+
+from iobserver import iObserver
+from time import sleep
+
+io = iObserver('iobserverrc')
+io.start()
+print "iObserver started. Press ^C to terminate..."
+try:
+	while True:
+		sleep(1)
+		if not io.is_alive():
+			print "Observer died!"
+			print "Error was: %s" % io.error()
+			break
+except KeyboardInterrupt:
+	print "Terminating..."
+	io.stop()
+	sleep(2)
+	if io.error():
+		print "Error: %s" % io.error()
+except:
+	print "General error!"

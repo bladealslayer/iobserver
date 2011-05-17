@@ -1,0 +1,5 @@
+[global]
+watch_config=1
+[watches]
+[[watch1]]
+[[watch2]]

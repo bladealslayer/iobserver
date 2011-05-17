@@ -1,0 +1,11 @@
+[global]
+watch_config = yes
+watch_plugins = yes
+[watches]
+[[/some/example/path]]
+plugins = scribe
+scribe_log = -
+[[/some/example/path2]]
+plugins = scribe, replica
+scribe_log = -
+replica_destination = /some/example/log
