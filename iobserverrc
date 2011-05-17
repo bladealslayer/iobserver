@@ -8,4 +8,4 @@ scribe_log = -
 [[/some/example/path2]]
 plugins = scribe, replica
 scribe_log = -
-replica_destination = /some/example/log
+replica_destination = /some/example/mirror/dest
